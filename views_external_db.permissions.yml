@@ -1,0 +1,4 @@
+administer ved:
+  title: 'Administer views_external_db Settings'
+  description: 'Access the views_external_db administrative settings page.'
+  restrict access: true

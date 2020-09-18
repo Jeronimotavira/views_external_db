@@ -1,0 +1,11 @@
+views_external_db.admin_settings:
+  title: Add DataBase table
+  route_name: views_external_db.admin_settings
+  base_route: views_external_db.admin_settings
+
+views_external_db.admin_settings.delete:
+  title: Delete DataBase table
+  route_name: views_external_db.admin_settings.delete
+  base_route: views_external_db.admin_settings
+
+

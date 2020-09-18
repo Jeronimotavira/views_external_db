@@ -1,0 +1,52 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function views_external_db_schema() {
+  $schema['views_external_db'] = array(
+    'description' => 'Stores the tables for created views',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the record.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'db_name' => array(
+        'description' => 'the data base where the table is',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+      ),
+      'user_name' => array(
+        'description' => 'the user for db conection',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+      ),
+      'password' => array(
+        'description' => 'the password for db conection',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+      ),
+      'table_name' => array(
+        'description' => 'the user for db conection',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+      ),
+      'host' => array(
+        'description' => 'localhost or other',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('id'),
+    
+  );
+
+  return $schema;
+}

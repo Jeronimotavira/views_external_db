@@ -1,0 +1,19 @@
+views_external_db.admin_settings:
+  title: 'Views External DB'
+  description: 'configurar bases de datos y tablas para las vistas.'
+  parent: system.admin_config_development
+  route_name: views_external_db.admin_settings
+
+views_external_db.add:
+  title: Añadir DB
+  description: ''
+  parent: views_external_db.admin_settings
+  route_name: views_external_db.admin_settings
+  weight: 1
+
+views_external_db.edit:
+  title: Eliminar DB
+  description: ''
+  parent: views_external_db.admin_settings
+  route_name: views_external_db.admin_settings.delete
+  weight: 2

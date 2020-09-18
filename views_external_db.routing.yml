@@ -1,0 +1,22 @@
+views_external_db.admin_settings:
+  path: '/admin/config/development/ViewsExternalDbAddForm'
+  defaults:
+    _form: '\Drupal\views_external_db\Form\ViewsExternalDbAddForm'
+    _title: 'añadir bases conexiones externas para crear vistas'
+  requirements:
+    _permission: 'administer ved'
+    
+views_external_db.admin_settings.delete:
+  path: '/admin/config/development/ViewsExternalDbDeleteForm'
+  defaults:
+    _form: '\Drupal\views_external_db\Form\ViewsExternalDbDeleteForm'
+    _title: 'añadir bases conexiones externas para crear vistas'
+  requirements:
+    _permission: 'administer ved'
+
+
+
+views_external_db.home:
+  path: '/inicio'
+  
+
