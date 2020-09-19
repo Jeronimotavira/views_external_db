@@ -57,25 +57,7 @@ class ViewsExternalDbDeleteForm extends FormBase {
         '#options' => $output,
         '#empty' => t('No connection found'),
       ];
-     /* foreach ($data as $record) {
-        $form[$record->id] = array(
-          '#type' => 'checkbox',
-          '#title' => $this->t('Delete @database : @table_name.', ['@database' => $record->db_name ,'@table_name'=>$record->table_name]),
-          '#default_value' => 0,
-        );
-      } */
-
-     /* $rows[] = $form['submit'] = array(
-        '#type' => 'submit',
-        '#value' => t('Eliminar'),
-      );
-
-      $content['table'] = array(
-        '#type' => 'table',
-        '#header' => $headers,
-        '#rows' => $rows,
-        '#empty' => t('No entries available.'),
-      );*/
+    
       $form['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Eliminar'),

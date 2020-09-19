@@ -64,6 +64,13 @@ class ViewsExternalDbAddForm extends FormBase {
         '#description' => t("Nombre de la Tabla en la base de datos."),
         '#required' => TRUE,
       );
+      $form['host'] = array(
+        '#title' => t('Hostname'),
+        '#type' => 'textfield',
+        '#size' => 25,
+        '#description' => t("Nombre del hostname (LOCALHOST)."),
+        '#required' => TRUE,
+      );
       $form['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Añadir'),
@@ -84,6 +91,7 @@ class ViewsExternalDbAddForm extends FormBase {
       'table_name' => $form_state->getValue('table_name'),
      ))
     ->execute();
+    drupal_flush_all_caches();
     \Drupal::messenger()->addStatus(t('La DB y la tabla fueron añadidas para crear vistas.'));
 
   }
